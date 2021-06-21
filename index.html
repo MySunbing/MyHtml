@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>开始使用 layui</title>
+  <link rel="stylesheet" href="css/layui.css">
+  <style type="text/css">
+  	body,html{
+		height: 100%;
+	}
+	root:{
+		
+	}
+	img{
+		height: 100%;
+		width: 100%;
+	}
+	.layui-container{
+		min-width:786px;
+	}
+  </style>
+</head>
+<body>
+ 
+<!-- 你的 HTML 代码 -->
+
+<div class="layui-container" style="width: 100%; padding: 0px;">
+	<!-- 导航 Start -->
+<ul class="layui-nav" lay-filter="">
+  <li class="layui-nav-item layui-this"><a href="#"><i class="layui-icon layui-icon-home"></i>&nbsp;首页</a></li>
+  <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-camera"></i>&nbsp;相册</a></li>
+  <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-log"></i>&nbsp;日记</a></li>
+  <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-list"></i>&nbsp;博客</a></li>
+  <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-edit"></i>&nbsp;留言板</a></li>
+  <li class="layui-nav-item">
+    <a href="javascript:;">更多内容</a>
+    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+      <dd><a href="#">内容模块</a></dd>
+      <dd><a href="#">内容模块</a></dd>
+      <dd><a href="#">内容模块</a></dd>
+    </dl>
+  </li>
+  <li class="layui-nav-item"><a href="#"><i class="layui-icon layui-icon-chat"></i>&nbsp;关于</a></li>
+</ul>
+<!-- 导航End -->
+<!-- 轮播 Start-->
+<div class="layui-carousel" id="test1">
+  <div carousel-item>
+    <div><img src="img/event_2010_72.jpg" ></div>
+    <div><img src="img/event_2010_8.jpg" ></div>
+	<div><img src="img/event_2010_1.jpg" ></div>
+	<div><img src="img/event_2010_8.jpg" ></div>
+	<div><img src="img/event_2010_62.jpg" ></div>
+  </div>
+</div>
+<!-- 条目中可以是任意内容，如：<img src=""> -->
+<!-- 轮播 End -->
+
+<!-- 时间线内容 Start -->
+<ul class="layui-timeline" style="margin: 30px 0 0 30px;">
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月18日</h3>
+      <p>
+        layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+        <br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+        <br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+      </p>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月16日</h3>
+      <p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+      <ul>
+        <li>《登高》</li>
+        <li>《茅屋为秋风所破歌》</li>
+      </ul>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+    <div class="layui-timeline-content layui-text">
+      <h3 class="layui-timeline-title">8月15日</h3>
+      <p>
+        中国人民抗日战争胜利72周年
+        <br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+        <br>铭记、感恩
+        <br>所有为中华民族浴血奋战的英雄将士
+        <br>永垂不朽
+      </p>
+    </div>
+  </li>
+  <li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+    <div class="layui-timeline-content layui-text">
+      <div class="layui-timeline-title">过去</div>
+    </div>
+  </li>
+</ul>
+      
+<!-- 时间线内容 End -->
+
+<!-- 表单 Start -->
+<div class="layui-row" style="margin-top: 30px;">
+    <div class="layui-col-md11">
+		<form class="layui-form" action="">
+        <div class="layui-form-item layui-form-text">
+          <label class="layui-form-label">欢迎留言</label>
+          <div class="layui-input-block">
+            <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo"><i class="layui-icon layui-icon-face-smile"></i>  提交留言</button>
+            <button type="reset" class="layui-btn layui-btn-primary"><i class="layui-icon layui-icon-close"></i>重置</button>
+          </div>
+        </div>
+		</form>
+    </div>
+  </div>
+<!-- 表单 End -->
+
+<!-- 底栏 Start -->
+<div class="layui-row " style="height: 30px; background-color: #393D49; line-height: 30px;">
+	<p style="width: 100%; text-align: center;"><a href="#" style="color: rgba(255,255,255,.7);">免责声明</a>&nbsp<a href="#" style="color: rgba(255,255,255,.7);">友情链接</a>&nbsp<a href="#" style="color: rgba(255,255,255,.7);">公众号</a></p>
+</div>
+<!-- 底栏 End -->
+ <!-- 你的 HTML 代码 -->
+<!-- 调用JS文件 -->
+<script src="layui.js"></script>
+<!-- 加载模块 -->
+<script>
+/* 导航模块 */
+layui.use('element', function(){
+  var element = layui.element;
+});
+/* 导航模块 End*/
+/* 轮播模块 */
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+    carousel.render({
+      elem: '#test1'
+      ,width: '100%' //设置容器宽度
+      ,arrow: 'always'//始终显示箭头 
+	  ,height: '300px',//高度
+      //,anim: 'updown' //切换动画方式
+    });
+});
+/* 轮播模块 End*/
+/* 表单模块 */
+layui.use('form', function(){
+  var form = layui.form;
+  //监听提交
+  form.on('submit(formDemo)', function(data){
+    layer.msg(JSON.stringify(data.field));
+    return false;
+  });
+});
+</script> 
+</body>
+</html>
+      
