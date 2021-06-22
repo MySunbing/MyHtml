@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+		<style>
+			*{
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1px;/* 字符间距 */
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+
+.container{
+	height: 100%;
+	background-image: linear-gradient(to right,#fbc2eb,#a6c1ee);
+}
+.login-wrapper{
+	background-color: #fff;
+	width: 250px;
+	height: 400px;
+	position: relative;/* 相对定位 */
+	left: 50%;/* 调整位置 */
+	top: 50%;/* 调整位置 */
+	transform: translate(-50%,-50%);/* 调整位置 */
+	border-radius: 15px;/* 圆角 */
+	padding: 0 50px  ;
+
+}
+.login-wrapper .header{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 100px;
+}
+.login-wrapper .form-wrapper .input{
+	display: block;
+	width: 90%;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 1px solid rgb(128,125,125);
+	padding: 10px;
+	font-size: 15px;
+	outline: none;
+}
+.login-wrapper .form-wrapper .bt{
+	text-align: center;
+	padding: 10px;
+	width: 90%;
+	margin-top: 40px;
+	background-image: linear-gradient(to right,#a6c1ee,#fbc2eb);
+	color: #FFFFFF;
+}
+.login-wrapper .msg{
+	text-align: center;
+	line-height: 80px;
+}
+a{
+	text-decoration: none;
+	color: #a6c1ee;
+}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="login-wrapper">
+				<div class="header">登录</div>
+				<div class="form-wrapper">
+				<input type="text"name="username" placeholder="账户名" class="input">
+				<input type="password"name="password" placeholder="密码" class="input">
+				<div class="bt">Login</div>
+				</div>
+				<div class="msg">没有账户?<a href="#">注册账户</a></div>
+			</div>
+		</div>
+	</body>
+</html>
+
+				
